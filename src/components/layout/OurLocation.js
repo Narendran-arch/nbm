@@ -60,7 +60,7 @@ export default function OurLocation() {
           </h1>
         </div>
         <div>
-          <p
+          <h2
             className="text-[#757575] text-[0.875rem]  /* default base size */
    sm:text-[1rem]          /* small screens */
    md:text-[1.125rem]      /* medium screens */
@@ -70,7 +70,7 @@ export default function OurLocation() {
           >
             Serving patients across the city with multiple physiotherapy clinics
             for easy access and convenience.
-          </p>
+          </h2>
         </div>
       </div>
       <div

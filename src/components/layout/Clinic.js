@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TeamCard from "../TeamCard";
+import AboutUsJourney from "../layout/AboutUsJourney.js"
 
 export const metadata = {
   title: "Our Dedicated Physiotherapy Team | Wellness Expert Clinic",
@@ -48,9 +49,9 @@ export default function ClinicPAge() {
     },
   ];
   return (
-    <section className="w-full min-h-screen bg-[#F5F7FA] flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 py-16">
+    <section className="w-full min-h-screen bg-[#F5F7FA] flex flex-col items-center justify-center  py-16">
 
-      <h1 className="font-bold text-[#014579] text-[2rem] mb-6">About Us </h1>
+      <h1 className="text-center text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">About Us </h1>
 
       {/* Main Container (909x540 at 1440) */}
       <motion.div
@@ -142,7 +143,7 @@ export default function ClinicPAge() {
         </motion.div>
       </motion.div>
       <section className="max-w-[950px] mx-auto px-6 pt-20 text-center">
-        <h1 className="text-[42px] font-bold text-[#0E3A5D] leading-tight">
+        <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579] text-center">
           Our Dedicated Team
         </h1>
 
@@ -162,15 +163,21 @@ export default function ClinicPAge() {
 
       {/* Team Section */}
       <section className="max-w-[1200px] mx-auto px-6 pt-20 pb-28">
-        <h2 className="text-center text-[34px] font-bold text-[#0E3A5D]">
+        <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579] text-center">
           Meet Our Specialists
-        </h2>
+        </h1>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {specialists.map((doctor, index) => (
             <TeamCard key={index} {...doctor} />
           ))}
         </div>
+      </section>
+
+      {/*our journey */}
+
+      <section className="w-full">
+        <AboutUsJourney/>
       </section>
     </section>
   );

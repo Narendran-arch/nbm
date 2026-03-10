@@ -291,7 +291,7 @@ export default function ServiceOffered() {
       </div>
 
       {/* MOBILE – STACKED */}
-      <div className="block md:hidden mt-12 px-4 space-y-6">
+      <div className="flex flex-col items-center md:hidden mt-12 md:px-4 space-y-6">
         {visibleServices.map((service) => (
           <ServiceCard key={service.slug} service={service} />
         ))}

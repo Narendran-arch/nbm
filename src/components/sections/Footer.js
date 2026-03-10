@@ -114,7 +114,7 @@ export default function Footer() {
                   width={14}
                   height={14}
                 />
-                Rhythm Fitness, Chennai
+                120, 40 Feet Rd, Lakshmi Nagar, Porur, Ch- 600116
               </p>
               <p className="flex items-center gap-2">
                 <Image

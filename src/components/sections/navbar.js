@@ -32,7 +32,7 @@ export default function Navbar() {
       name: "Our Service",
       href: "",
       dropdown: [
-        { label: "Accessible physiotherapy",  href: "/#accessible-physiotherapy", },
+        { label: "Accessible physiotherapy", href: "/#accessible-physiotherapy", },
         { label: "Recovery roadmap", href: "/#recoveryroadmap" },
         { label: "Services offered", href: "/#serviceofferedpage" },
         { label: "Therapies offered", href: "/#therapiesoffered" },
@@ -45,7 +45,7 @@ export default function Navbar() {
       name: "About",
       href: "",
       dropdown: [
-                { label: "Clinic ", href: "/aboutUs/Clinic" },
+        { label: "Clinic ", href: "/aboutUs/Clinic" },
         { label: "patients review ", href: "/#patientsreviewpage" },
         { label: "Our location", href: "/#ourlocationspage" },
         { label: "FAQ", href: "/#faqpage" },
@@ -99,9 +99,8 @@ export default function Navbar() {
                 </Link>
 
                 <ul
-                  className={`flex items-center ${
-                    isLandingPage ? "mb-3" : "py-5"
-                  } z-50 text-white font-medium `}
+                  className={`flex items-center ${isLandingPage ? "mb-3" : "py-5"
+                    } z-50 text-white font-medium `}
                 >
                   {menuItems.map((item) => (
                     <li
@@ -124,8 +123,7 @@ export default function Navbar() {
   h-[clamp(36px,3.9vh,44px)]
   px-[clamp(14px,1.5vw,24px)]
   font-medium
-transition-all duration-200 ease-in-out  ${
-                            openDropdown === item.name
+transition-all duration-200 ease-in-out  ${openDropdown === item.name
                               ? `
       bg-white text-black
       rounded-t-xl
@@ -149,7 +147,7 @@ transition-all duration-200 ease-in-out  ${
   after:content-['']
   ${isActive(item) ? "after:w-[60%]" : "after:w-0"}
     `
-                          }
+                            }
 
 `}
                         >
@@ -167,7 +165,7 @@ transition-all duration-200 ease-in-out  ${
                       ) : (
                         <Link
                           href={item.href}
-                         
+
                           className={`
   flex items-center justify-center 
   h-[clamp(36px,3.9vh,44px)]
@@ -237,9 +235,8 @@ transition-all duration-200 ease-in-out  ${
 
               {/* RIGHT CTA */}
               <div
-                className={`flex items-center justify-center ${
-                  isLandingPage ? "" : "bg-hero-gradient"
-                }`}
+                className={`flex items-center justify-center ${isLandingPage ? "" : "bg-hero-gradient"
+                  }`}
               >
                 <a
                   href="https://wa.me/919600104848?text=Hi%20I%20would%20like%20to%20book%20an%20appointment"
@@ -353,9 +350,8 @@ transition-all duration-200 ease-in-out  ${
                             {item.name}
 
                             <svg
-                              className={`w-4 h-4 transition-transform duration-300 ${
-                                openMobileDropdown === index ? "rotate-180" : ""
-                              }`}
+                              className={`w-4 h-4 transition-transform duration-300 ${openMobileDropdown === index ? "rotate-180" : ""
+                                }`}
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -371,11 +367,10 @@ transition-all duration-200 ease-in-out  ${
 
                           {/* Submenu */}
                           <div
-                            className={`overflow-hidden transition-all duration-300 ${
-                              openMobileDropdown === index
+                            className={`overflow-hidden transition-all duration-300 ${openMobileDropdown === index
                                 ? "max-h-[500px] mt-4"
                                 : "max-h-0"
-                            }`}
+                              }`}
                           >
                             <ul className="space-y-3 pl-4 text-[14px] text-[#555]">
                               {item.dropdown.map((subItem) => (

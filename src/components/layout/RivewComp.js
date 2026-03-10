@@ -118,7 +118,7 @@ export default function PatientReviewsPage() {
       <div className="relative z-10 max-w-[1440px] mx-auto w-full px-6 lg:px-16 py-16">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h1 className="text-2xl md:text-4xl font-bold text-[#014579]">
+          <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]font-bold text-[#014579]">
             What Our Patients Say
           </h1>
         </div>

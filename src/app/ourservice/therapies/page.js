@@ -101,7 +101,7 @@ export default function TherapiesOffered() {
     >
       {/* Header */}
       <div className="text-center px-4">
-        <h1 className="text-[2rem] font-bold text-[#014579]">
+        <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">
           Therapies Offered
         </h1>
         <h2 className="text-[#757575] mt-2 text-sm md:text-base">
@@ -158,7 +158,7 @@ export default function TherapiesOffered() {
       </div>
 
       {/* MOBILE – STACKED */}
-      <div className="block md:hidden mt-12 px-4 space-y-6">
+      <div className="flex flex-col items-center md:hidden mt-12 md:px-4 space-y-6">
         {visibleTherapies.map((therapies) => (
           <ServiceCard key={therapies.slug} service={therapies} />
         ))}

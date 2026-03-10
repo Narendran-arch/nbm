@@ -9,7 +9,7 @@ xl:px-[18rem]      /* ≥1440px ← FIGMA */
 2k:px-[20rem]      /* ≥1920px optional */"
 id="mappage"
     >
-      <h1 className="font-bold text-[#014579] text-[2rem] mb-6">Locations</h1>
+      <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">Locations</h1>
 
       <div className="w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-md">
         <iframe

@@ -33,7 +33,7 @@ export default function Threesteps() {
   return (
     <section className="w-full bg-[#F7F9FB] py-[100px] " id="recoveryroadmap">
       {/* TITLE */}
-      <h1 className="mx-[34px] text-[24px] md:text-[32px] font-bold text-center text-[#014579] mb-[80px]">
+      <h1 className="mx-[34px] text-center text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">
         Three Simple Steps to better health
       </h1>
 

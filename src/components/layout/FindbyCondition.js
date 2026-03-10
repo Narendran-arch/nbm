@@ -68,11 +68,11 @@ export default function FindbyCondition() {
     <section className="mx-[1rem]  md:mx-[7rem] mb-[6rem]" id="findbyconditionspage">
       <div className="flex flex-col justify-center items-center">
         <div>
-          <h1 className="text-[2.25rem] font-bold text-[#014579]">
+          <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">
             Find by condition
           </h1>
         </div>
-        <div className="text-[#757575] mt-[1rem] text-center text-[1.25rem] mb-[2.5rem] ">
+        <div className="text-[#757575] mt-0 text-center text-[1.25rem] mb-[2.5rem] ">
           <h2>Browse treatments by medical condition category</h2>
         </div>
       </div>

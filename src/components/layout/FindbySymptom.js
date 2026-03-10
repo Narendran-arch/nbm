@@ -145,12 +145,12 @@ export default function FindbySymptom() {
       {/* CONTENT */}
       <div className="mt-[5.5rem]">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[1.5rem] md:text-[2.25rem] font-bold text-[#014579]">
+          <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">
             Find by Symptom
           </h1>
-          <p className="text-[#757575] text-[1.125rem]">
+          <h2 className="text-[#757575] text-[1.125rem]">
             Select the symptom you are experiencing
-          </p>
+          </h2>
         </div>
 
         {/* ---------------- MOBILE GRID ---------------- */}
