@@ -9,9 +9,11 @@ import PatientReviewsPage from "@/components/layout/RivewComp";
 import OurLocation from "@/components/layout/OurLocation";
 import Faq from "@/components/sections/Faq";
 import Locations from "@/components/layout/Locations";
+import { Analytics } from '@vercel/analytics/next';
 export default function Home() {
   return (
     <div>
+      
       <Landing />
       <LandingClinic />
       <Threesteps />
@@ -23,6 +25,7 @@ export default function Home() {
       <OurLocation />
       <Faq />
       <Locations />
+      <Analytics />
     </div>
   );
 }
