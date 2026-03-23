@@ -3,73 +3,84 @@ import ConditionCard from "../ui/Conditioncard";
 export default function FindbyCondition() {
   const conditionCardsData = [
     {
-      icon: "/Neurologyical.svg",
-      title: "Neurological Rehabilitation",
+      icon: "/icon/ortho-pain.svg",
+      title: "Orthopedic Pain",
       conditions: [
-        "Stroke Recovery",
-        "Parkinson’s Disease",
-        "Multiple Sclerosis",
-        "Traumatic Brain Injury",
-        "Spinal Cord Injury",
-        "Bell’s Palsy",
-        "Guillain-Barré Syndrome",
-        "Peripheral Neuropathy",
+        "Musculoskeletal pain",
+        "Cervical spondylosis",
+        "Cervical radiculopathy",
+        "Frozen shoulder",
+        "Rotator cuff impingement",
+        "Labrum tear / ligament tear",
+        "Tennis elbow / Golfer’s elbow",
+        "Lumbar spondylosis",
+        "Knee osteoarthritis",
+        "Post-fracture rehabilitation",
       ],
       color: "#A8E2AD",
     },
+
     {
-      icon: "/Neurologyical.svg",
-      title: "Orthopedic Conditions",
+      icon: "/icon/heart-clrbg-no-fill.svg",
+      title: "General Fitness",
       conditions: [
-        "ACL Injury",
-        "Meniscus Tear",
-        "Frozen Shoulder",
-        "Rotator Cuff Injury",
-        "Tennis Elbow",
-        "Lumbar Spondylosis",
-        "Cervical Spondylosis",
-        "Fracture Rehabilitation",
+        "Cardiovascular endurance",
+        "Muscular endurance",
+        "Muscular strength",
+        "Muscle flexibility",
+        "Body composition improvement",
+        "Weight management programs",
+        "Functional fitness training",
+        "Postural fitness training",
+        "Injury prevention exercises",
+        "Core strengthening programs",
       ],
       color: "#8AAAC1",
     },
+
     {
-      icon: "/Neurologyical.svg",
-      title: "Sports Injuries",
+      icon: "/icon/Neurologyical.svg",
+      title: "Neurological Conditions",
       conditions: [
-        "Hamstring Strain",
-        "Ankle Sprain",
-        "Shin Splints",
-        "Runner’s Knee",
-        "Groin Strain",
-        "Shoulder Dislocation",
-        "Achilles Tendinitis",
-        "Muscle Tear",
+        "Stroke recovery",
+        "Parkinson’s disease",
+        "Multiple sclerosis",
+        "Traumatic brain injury",
+        "Spinal cord injury",
+        "Bell’s palsy",
+        "Guillain-Barré syndrome",
+        "Peripheral neuropathy",
+        "Balance and coordination disorders",
+        "Gait training rehabilitation",
       ],
-      color: "#F2B880",
+      color: "#A8E2AD",
     },
+
     {
-      icon: "/Neurologyical.svg",
-      title: "Chronic Pain Management",
+      icon: "icon/stethoscope-clrbg.svg",
+      title: "Cardiovascular",
       conditions: [
-        "Chronic Lower Back Pain",
-        "Sciatica",
-        "Fibromyalgia",
-        "Myofascial Pain Syndrome",
-        "Postural Dysfunction",
-        "Arthritis",
-        "Disc Prolapse",
-        "Neck & Shoulder Stiffness",
+        "Cardiac rehabilitation",
+        "Respiratory physiotherapy",
+        "Post-cardiac surgery rehabilitation",
+        "Exercise prescription programs",
+        "Pulmonary rehabilitation",
+        "Breathing exercises training",
+        "Endurance training",
+        "Patient monitoring programs",
+        "Lifestyle modification education",
+        "Functional capacity improvement",
       ],
-      color: "#D6A8E2",
+      color: "#8AAAC1",
     },
   ];
 
   return (
-    <section className="mx-[1rem]  md:mx-[7rem] mb-[6rem]" id="findbyconditionspage">
+    <section className="px-[1rem]  md:px-[7rem] mb-[6rem]" id="findbyconditionspage">
       <div className="flex flex-col justify-center items-center">
         <div>
           <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] xl:text-[2rem] 2k:text-[2.5rem] font-bold my-[2rem]  text-[#014579]">
-            Find by condition
+            Find by Speciality
           </h1>
         </div>
         <div className="text-[#757575] mt-0 text-center text-[1.25rem] mb-[2.5rem] ">

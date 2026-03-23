@@ -10,7 +10,7 @@ export default function LandingClinic() {
       title: "In Clinic Service",
       description:
         "Every session begins with a careful evaluation, allowing our therapists to create a treatment plan that aligns with your body’s unique recovery path.",
-      image: "/landing2-in-clinic.png",
+      image: "/landing/landing2-in-clinic.png",
       services: [
         "Physio assessment and treatment plan",
         "Manual therapy",
@@ -26,7 +26,7 @@ export default function LandingClinic() {
       title: "House Visits",
       description:
         "Personalized physiotherapy treatment provided at home for convenient recovery. Ideal for post-surgical, elderly, and mobility-restricted patients.",
-      image: "/landing2-house-visit.png",
+      image: "/landing/landing2-house-visit.png",
       services: [
         "Assessment & customized treatment plan",
         "Neurological rehabilitation(e.g., stroke,.etc)",
@@ -42,7 +42,7 @@ export default function LandingClinic() {
       title: "Virtual Care",
       description:
         "Expert physiotherapy sessions delivered online through guided video consultations. Ideal for pain management, posture correction & exercise-based rehabilitation.",
-      image: "/landing2-Virtual Care.png",
+      image: "/landing/landing2-Virtual Care.png",
       services: [
         "Video/tele consultation and symptom review",
         "Movement screening, functional assessment",

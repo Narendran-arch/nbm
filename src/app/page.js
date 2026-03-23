@@ -12,15 +12,15 @@ import Locations from "@/components/layout/Locations";
 import { Analytics } from '@vercel/analytics/next';
 export default function Home() {
   return (
-    <div>
+    <div className=" bg-[#F5F7FA]">
       
       <Landing />
       <LandingClinic />
       <Threesteps />
-      <TherapiesOffered />
-      <ServiceOffered />
       <FindbySymptom />
       <FindbyCondition />
+      <TherapiesOffered />
+      <ServiceOffered />
       <PatientReviewsPage />
       <OurLocation />
       <Faq />

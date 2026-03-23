@@ -78,7 +78,7 @@ export default function ClinicPAge() {
           className="relative w-full lg:w-[420px] aspect-[4/5] rounded-2xl overflow-hidden shadow-lg"
         >
           <Image
-            src="/doctor.png" // <-- replace with your image path
+            src="/aboutUs/doctor.png" 
             alt="Dr. K. Bala Manikandan"
             fill
             className="object-cover"

@@ -84,7 +84,7 @@ export default function AboutUsJourney() {
       {/* HERO SECTION */}
       <div className="relative w-full h-[420px] md:h-[480px]">
         <Image
-          src="/about-us-journey.png"
+          src="/aboutUs/about-us-journey.png"
           alt="Physiotherapy session helping patient regain movement"
           fill
           priority

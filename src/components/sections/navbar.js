@@ -247,7 +247,7 @@ transition-all duration-200 ease-in-out  ${openDropdown === item.name
                 >
                   <span>
                     <Image
-                      src="/arrow-slim-right-white.svg"
+                      src="/icon/arrow-slim-right-white.svg"
                       alt="arrow"
                       width={22}
                       height={22}

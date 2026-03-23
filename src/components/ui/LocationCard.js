@@ -54,7 +54,7 @@ flex flex-col h-[48%] p-4        "
         <div className="space-y-2 mb-10">
           <p className="flex items-center text-[#757575] font-bold  text-[12px] mb-[1rem]">
             <Image
-              src="/location-icon-blue.svg"
+              src="/icon/location-icon-blue.svg"
               width={16}
               height={16}
               alt="location-icon"
@@ -65,7 +65,7 @@ flex flex-col h-[48%] p-4        "
 
           <p className="flex items-center text-[#757575] font-bold  text-[12px] mb-[1rem]">
             <Image
-              src="/phone-icon-blue.svg"
+              src="/icon/phone-icon-blue.svg"
               width={18}
               height={18}
               alt="phone-icon"
@@ -76,7 +76,7 @@ flex flex-col h-[48%] p-4        "
 
           <p className="flex items-center text-[#757575] font-bold  text-[12px] mb-[1rem]">
             <Image
-              src="/clock-icon-blue.svg"
+              src="/icon/clock-icon-blue.svg"
               width={16}
               height={16}
               alt="clock-icon"
@@ -96,7 +96,7 @@ flex flex-col h-[48%] p-4        "
           >
             <span className="m-2">
               <Image
-                src="/arrow-right-white-icon.svg"
+                src="/icon/arrow-right-white-icon.svg"
                 width={16}
                 height={14}
                 alt="arrow-right-white-icon"

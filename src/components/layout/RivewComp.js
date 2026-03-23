@@ -107,7 +107,7 @@ export default function PatientReviewsPage() {
     <section
       className="relative w-full  flex flex-col "
       style={{
-        backgroundImage: "url('/review-backgorund.svg')",
+        backgroundImage: "url('/aboutUs/review-background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

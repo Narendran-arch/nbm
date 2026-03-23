@@ -48,7 +48,7 @@ export default function Landing() {
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
               name: "NBM Rhythm Physiotherapy",
-              image: "https://nbmrhythm.com/hero.png",
+              image: "https://nbmrhythm.com/landing/hero.png",
               telephone: "+919600104848",
               email: "helpdesk@nbmrhythm.com",
               url: "https://nbmrhythm.com",
@@ -106,10 +106,10 @@ export default function Landing() {
                 <div className="flex flex-row gap-20">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="tick-circle-white.svg"
+                      src="/icon/tick-circle-white.svg"
                       width={14}
                       height={14}
-                      alt=""
+                      alt="tick-circle"
                     />
                     <div className="text-[#FFFFFF] text-[clamp(16px,1vw,22px)]">
                       Licensed Professionals
@@ -117,10 +117,10 @@ export default function Landing() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Image
-                      src="tick-circle-white.svg"
+                      src="/icon/tick-circle-white.svg"
                       width={14}
                       height={14}
-                      alt=""
+                      alt="tick-circle"
                     />
                     <div className="text-[#FFFFFF] text-[clamp(16px,1vw,22px)]">
                       10 + Years of Experience
@@ -130,10 +130,10 @@ export default function Landing() {
 
                 <div className="flex items-center gap-2">
                   <Image
-                    src="tick-circle-white.svg"
+                    src="/icon/tick-circle-white.svg"
                     width={14}
                     height={14}
-                    alt=""
+                    alt="tick-circle"
                   />
                   <div className="text-[#FFFFFF] text-[clamp(16px,1vw,22px)]">
                     40k + Trusted patients
@@ -150,7 +150,7 @@ export default function Landing() {
                   className="flex z-40 items-center justify-center border border-[#FFFFFF80] rounded-xl text-[#FFFFFF] text-[clamp(15px,1.25vw,20px)] font-semibold gap-2 w-[19.6vw] h-[5.5vh] min-h-[50px] bg-[#229D2E]"
                 >
                   <Image
-                    src="/arrow-slim-right-white.svg"
+                    src="/icon/arrow-slim-right-white.svg"
                     alt=""
                     width={24}
                     height={24}
@@ -163,7 +163,7 @@ export default function Landing() {
                   className="flex items-center justify-center border border-[#4ADE80] rounded-xl text-[#FFFFFF] text-[clamp(15px,1.25vw,20px)] font-semibold gap-2 w-[19.6vw] h-[5.5vh] min-h-[50px] bg-transparent"
                 >
                   <Image
-                    src="/phone-icon-white-fill.svg"
+                    src="/icon/phone-icon-white-fill.svg"
                     alt=""
                     width={24}
                     height={24}
@@ -183,7 +183,7 @@ export default function Landing() {
               className="flex items-center justify-center"
             >
               <Image
-                src="/hero.png"
+                src="/landing/hero.png"
                 alt="hero"
                 width={556}
                 height={569}
@@ -199,7 +199,7 @@ export default function Landing() {
                   <div className="flex flex-col gap-y-4">
                     <div className="flex items-center gap-2">
                       <Image
-                        src="/phone-icon-blue-fill.svg"
+                        src="/icon/phone-icon-blue-fill.svg"
                         alt=""
                         width={20}
                         height={20}
@@ -214,7 +214,7 @@ export default function Landing() {
 
                     <div className="flex items-center gap-2">
                       <Image
-                        src="/email-icon-emote.svg"
+                        src="/icon/email-icon-emote.svg"
                         alt=""
                         width={20}
                         height={20}
@@ -237,7 +237,7 @@ export default function Landing() {
                         aria-label="instagram link"
                       >
                         <Image
-                          src="/insta-icon.svg"
+                          src="/icon/insta-icon.svg"
                           alt=""
                           width={18}
                           height={18}
@@ -250,7 +250,7 @@ export default function Landing() {
                         aria-label="facebook link"
                       >
                         <Image
-                          src="/fb-icon.svg"
+                          src="/icon/fb-icon.svg"
                           alt=""
                           width={20}
                           height={20}
@@ -258,13 +258,13 @@ export default function Landing() {
                       </a>
 
                       <Image
-                        src="/linkedin-icon.svg"
+                        src="/icon/linkedin-icon.svg"
                         alt=""
                         width={20}
                         height={20}
                       />
-                      <Image src="/x-icon.svg" alt="" width={16} height={16} />
-                      <Image src="/yt-icon.svg" alt="" width={20} height={20} />
+                      <Image src="/icon/x-icon.svg" alt="" width={16} height={16} />
+                      <Image src="/icon/yt-icon.svg" alt="" width={20} height={20} />
                     </div>
                   </div>
                 </div>
@@ -301,7 +301,7 @@ export default function Landing() {
             >
               <div className="flex items-center gap-2">
                 <Image
-                  src="tick-circle-white.svg"
+                  src="/icon/tick-circle-white.svg"
                   width={14}
                   height={14}
                   alt=""
@@ -313,7 +313,7 @@ export default function Landing() {
 
               <div className="flex items-center gap-2">
                 <Image
-                  src="tick-circle-white.svg"
+                  src="/icon/tick-circle-white.svg"
                   width={14}
                   height={14}
                   alt=""
@@ -332,7 +332,7 @@ export default function Landing() {
               className="flex items-center gap-2"
             >
               <Image
-                src="tick-circle-white.svg"
+                src="/icon/tick-circle-white.svg"
                 width={14}
                 height={14}
                 alt=""
@@ -357,7 +357,7 @@ export default function Landing() {
               className="w-full h-[52px] bg-[#229D2E] rounded-xl flex items-center justify-center gap-2 text-white font-semibold text-[15px]"
             >
               <Image
-                src="/arrow-slim-right-white.svg"
+                src="/icon/arrow-slim-right-white.svg"
                 alt=""
                 width={20}
                 height={20}
@@ -370,7 +370,7 @@ export default function Landing() {
               className="w-full h-[52px] border border-[#4ADE80] rounded-xl flex items-center justify-center gap-2 text-white font-semibold text-[15px]"
             >
               <Image
-                src="/phone-icon-white-fill.svg"
+                src="/icon/phone-icon-white-fill.svg"
                 alt=""
                 width={20}
                 height={20}
@@ -386,7 +386,7 @@ export default function Landing() {
             className="relative mt-12 flex justify-center"
           >
             <Image
-              src="/hero.png"
+              src="/landing/hero.png"
               alt="hero"
               width={420}
               height={450}
@@ -401,7 +401,7 @@ export default function Landing() {
                     {/* Phone */}
                     <div className="flex items-center gap-2">
                       <Image
-                        src="/phone-icon-blue-fill.svg"
+                        src="/icon/phone-icon-blue-fill.svg"
                         alt=""
                         width={18}
                         height={18}
@@ -418,7 +418,7 @@ export default function Landing() {
                     {/* Email */}
                     <div className="flex items-center gap-2">
                       <Image
-                        src="/email-icon-emote.svg"
+                        src="/icon/email-icon-emote.svg"
                         alt=""
                         width={18}
                         height={18}
@@ -443,22 +443,22 @@ export default function Landing() {
                         aria-label="instagram link"
                       >
                         <Image
-                          src="/insta-icon.svg"
+                          src="/icon/insta-icon.svg"
                           alt=""
                           width={18}
                           height={18}
                         />
                       </a>
 
-                      <Image src="/fb-icon.svg" alt="" width={18} height={18} />
+                      <Image src="/icon/fb-icon.svg" alt="" width={18} height={18} />
                       <Image
-                        src="/linkedin-icon.svg"
+                        src="/icon/linkedin-icon.svg"
                         alt=""
                         width={18}
                         height={18}
                       />
-                      <Image src="/x-icon.svg" alt="" width={16} height={16} />
-                      <Image src="/yt-icon.svg" alt="" width={18} height={18} />
+                      <Image src="/icon/x-icon.svg" alt="" width={16} height={16} />
+                      <Image src="/icon/yt-icon.svg" alt="" width={18} height={18} />
                     </div>
                   </div>
                 </div>
@@ -476,7 +476,7 @@ export default function Landing() {
         {/* PARTICLES (DESKTOP ONLY) */}
         <div className="hidden lg:block absolute bottom-0 left-0">
           <Image
-            src="/home-partical-bottom-1.png"
+            src="/landing/home-partical-bottom-1.png"
             width={250}
             height={200}
             alt=""
@@ -485,7 +485,7 @@ export default function Landing() {
 
         <div className="hidden lg:block absolute bottom-0 left-0">
           <Image
-            src="/home-partical-bottom-2.png"
+            src="/landing/home-partical-bottom-2.png"
             width={300}
             height={200}
             alt=""
@@ -493,7 +493,7 @@ export default function Landing() {
         </div>
 
         <div className="hidden lg:block absolute top-0 right-0">
-          <Image src="/home-partical-top.png" width={150} height={300} alt="" />
+          <Image src="/landing/home-partical-top.png" width={150} height={300} alt="" />
         </div>
       </section>
     </>

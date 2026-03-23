@@ -36,7 +36,7 @@ function FooterSocials() {
       {socials.map((social) => (
         <Link key={social.name} href="/" aria-label={social.name}>
           <Image
-            src={`/${social.icon}-white-icon.svg`}
+            src={`/icon/${social.icon}-white-icon.svg`}
             alt={social.name}
             width={14}
             height={14}
@@ -109,7 +109,7 @@ export default function Footer() {
             <address className="not-italic mt-6 space-y-3 text-white text-[0.8rem]">
               <p className="flex items-center gap-2">
                 <Image
-                  src="/location-icon-white.svg"
+                  src="/icon/location-icon-white.svg"
                   alt=""
                   width={14}
                   height={14}
@@ -118,7 +118,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <Image
-                  src="/phone-icon-white.svg"
+                  src="/icon/phone-icon-white.svg"
                   alt=""
                   width={14}
                   height={14}
@@ -127,7 +127,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <Image
-                  src="/email-icon-white.svg"
+                  src="/icon/email-icon-white.svg"
                   alt=""
                   width={16}
                   height={16}
@@ -136,7 +136,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <Image
-                  src="/clock-icon-white.svg"
+                  src="/icon/clock-icon-white.svg"
                   alt=""
                   width={16}
                   height={16}

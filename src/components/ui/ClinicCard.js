@@ -65,7 +65,7 @@ export function ClinicCard({
           {visibleServices.map((service, index) => (
             <li key={index} className="flex items-start">
               <Image
-                src="/charm_circle-tick.png"
+                src="/icon/charm_circle-tick.svg"
                 width={14}
                 height={14}
                 alt="tick"

@@ -19,9 +19,9 @@ export default function TreatmentPlanModal({ data, onClose }) {
 
         {/* HEADER */}
         <div className="bg-[#ADD4F1DE] px-[3rem] py-5">
-          <h2 className="text-[2rem] text-center md:text-[2.25rem] font-bold text-[#014579]">
+          <h1 className="text-[2rem] text-center md:text-[2.25rem] font-bold text-[#014579]">
             {data.title}
-          </h2>
+          </h1>
           <p className="text-[1.25rem] pt-[1rem] text-center text-[#757575]">
             {data.subtitle}
           </p>
@@ -41,7 +41,7 @@ export default function TreatmentPlanModal({ data, onClose }) {
               >
                 <span>
                   <Image
-                    src="/charm_circle-tick.png"
+                    src="/icon/charm_circle-tick.svg"
                     alt="charm_circle-tick"
                     width={22}
                     height={22}

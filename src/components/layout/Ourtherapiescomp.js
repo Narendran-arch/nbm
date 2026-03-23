@@ -4,69 +4,7 @@ import { useState, useEffect } from "react";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-
-const therapies = [
-  {
-    slug: "manual-therapy",
-    title: "Manual Therapy",
-    goal: "Regain full functionality",
-    category: "Pain Relief",
-    tags: ["joint pain", "stiffness", "mobility"],
-    image: "/ourservicehero.png",
-    description:
-      "Manual therapy involves hands-on techniques to relieve pain, improve joint mobility, and restore muscle function. It helps reduce stiffness and enhances movement efficiency.",
-  },
-  {
-    slug: "interferential-therapy",
-    title: "Interferential Therapy (IFT)",
-    goal: "Return to peak performance",
-    category: "Pain Relief",
-    tags: ["pain relief", "nerve stimulation", "recovery"],
-    image: "/ourservicehero.png",
-    description:
-      "IFT uses low-frequency electrical currents to relieve pain, reduce inflammation, and stimulate healing. It is effective for deep tissue recovery and chronic pain conditions.",
-  },
-  {
-    slug: "ultrasound-therapy",
-    title: "Ultrasound Therapy",
-    goal: "Regain full functionality",
-    category: "Pain Relief",
-    tags: ["tissue healing", "inflammation", "rehab"],
-    image: "/ourservicehero.png",
-    description:
-      "Ultrasound therapy uses sound waves to promote tissue healing, reduce inflammation, and improve blood circulation. It supports faster recovery and pain reduction.",
-  },
-  {
-    slug: "electrotherapy",
-    title: "Electrotherapy",
-    goal: "Stimulate muscle recovery",
-    category: "Rehabilitation",
-    tags: ["muscle stimulation", "recovery", "strength"],
-    image: "/ourservicehero.png",
-    description:
-      "Electrotherapy uses electrical stimulation to activate muscles, reduce pain, and improve strength. It aids in rehabilitation and post-injury recovery.",
-  },
-  {
-    slug: "dry-needling",
-    title: "Dry Needling",
-    goal: "Release muscle tension",
-    category: "Pain Management",
-    tags: ["trigger points", "muscle tension", "pain relief"],
-    image: "/ourservicehero.png",
-    description:
-      "Dry needling targets trigger points to relieve muscle tightness and reduce pain. It improves flexibility and enhances overall muscle performance.",
-  },
-  {
-    slug: "kinesio-taping",
-    title: "Kinesio Taping",
-    goal: "Support injured muscles",
-    category: "Support Therapy",
-    tags: ["muscle support", "sports injury", "rehab"],
-    image: "/ourservicehero.png",
-    description:
-      "Kinesio taping provides support to muscles and joints without restricting movement. It reduces swelling, improves circulation, and enhances recovery.",
-  },
-];
+import { therapies } from "@/data/outTherapies";
 
 export default function Ourtherapies() {
   const router = useRouter();
@@ -81,14 +19,15 @@ export default function Ourtherapies() {
 
   const ITEMS_PER_PAGE = isMobile ? 4 : 12;
 
-  const filteredTherapies = therapies.filter((therapies) => {
+  // FIX 1: Changed parameter name from "therapies" to "therapy"
+  const filteredTherapies = therapies.filter((therapy) => {
     if (!query) return true;
 
     const search = query.toLowerCase();
     return (
-      therapies.title.toLowerCase().includes(search) ||
-      therapies.goal.toLowerCase().includes(search) ||
-      therapies.tags.some((tag) => tag.toLowerCase().includes(search))
+      therapy.title?.toLowerCase().includes(search) ||
+      therapy.goal?.toLowerCase().includes(search) ||
+      therapy.tags?.some((tag) => tag.toLowerCase().includes(search))
     );
   });
 
@@ -99,6 +38,7 @@ export default function Ourtherapies() {
     startIndex,
     startIndex + ITEMS_PER_PAGE,
   );
+
   useEffect(() => {
     const params = new URLSearchParams();
 
@@ -106,7 +46,7 @@ export default function Ourtherapies() {
     if (currentPage > 1) params.set("page", currentPage);
 
     router.replace(`?${params.toString()}`, { scroll: false });
-  }, [query, currentPage]);
+  }, [query, currentPage, router]);
 
   // Reset page when search changes
   useEffect(() => {
@@ -115,7 +55,7 @@ export default function Ourtherapies() {
     if (currentPage > totalPages) {
       setCurrentPage(1);
     }
-  }, [filteredTherapies.length]);
+  }, [filteredTherapies.length, currentPage]);
 
   const getPagination = (current, total) => {
     const pages = [];
@@ -145,7 +85,7 @@ export default function Ourtherapies() {
 
   return (
     <Suspense fallback={null}>
-      <section className="pt-[8rem] bg-[#F5F7FA] min-h-screen">
+      <section className="pt-[8rem] pb-20 bg-[#F5F7FA] min-h-screen">
         {/* Header */}
         <div className="text-center px-4">
           <h1 className="text-[2rem] font-bold text-[#014579]">
@@ -157,27 +97,55 @@ export default function Ourtherapies() {
         </div>
 
         {/* Search */}
+        {/* FIX 2: Updated Search bar to match Figma specs with Icon */}
         <div className="mt-10 flex justify-center px-4">
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by pain, treatment or therapy"
-            className="w-full max-w-3xl px-4 py-3 rounded-xl border border-[#E0E0E0]"
-          />
+          <div className="relative w-full max-w-3xl">
+            {/* Search Icon */}
+            <svg
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-800 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder='"Search by pain or treatment or therapies"'
+              className="
+                w-full 
+                pl-12 pr-4 py-3.5 
+                bg-white 
+                rounded-lg 
+                border border-gray-100 
+                shadow-[0px_2px_8px_0px_rgba(0,0,0,0.06)] 
+                outline-none 
+                text-gray-800 
+                placeholder:text-gray-500
+              "
+            />
+          </div>
         </div>
 
         {/* Cards */}
-        <div className="mt-16 px-6">
+        <div className="mt-16 px-6 max-w-7xl mx-auto">
           <div
             className="
-          grid gap-10
-          grid-cols-1
-          md:grid-cols-4
-        "
+              grid gap-10
+              grid-cols-1
+              sm:grid-cols-2
+              lg:grid-cols-3
+              xl:grid-cols-4
+            "
           >
             {paginatedTherapies.length > 0 ? (
-              paginatedTherapies.map((therapies) => (
-                <ServiceCard key={therapies.slug} service={therapies} />
+              // FIX 1 cont.: Changed parameter name from "therapies" to "therapy"
+              paginatedTherapies.map((therapy) => (
+                <ServiceCard key={therapy.slug} service={therapy} />
               ))
             ) : (
               <p className="col-span-full text-center text-[#757575]">
@@ -194,7 +162,7 @@ export default function Ourtherapies() {
             <button
               onClick={() => setCurrentPage((p) => p - 1)}
               disabled={currentPage === 1}
-              className="px-4 py-2 border rounded disabled:opacity-40"
+              className="px-4 py-2 border rounded disabled:opacity-40 transition-colors hover:bg-gray-50"
             >
               Prev
             </button>
@@ -209,8 +177,10 @@ export default function Ourtherapies() {
                 <button
                   key={item}
                   onClick={() => setCurrentPage(item)}
-                  className={`px-4 py-2 rounded border ${
-                    currentPage === item ? "bg-[#014579] text-white" : ""
+                  className={`px-4 py-2 rounded border transition-colors ${
+                    currentPage === item
+                      ? "bg-[#014579] text-white border-[#014579]"
+                      : "hover:bg-gray-50"
                   }`}
                 >
                   {item}
@@ -222,7 +192,7 @@ export default function Ourtherapies() {
             <button
               onClick={() => setCurrentPage((p) => p + 1)}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 border rounded disabled:opacity-40"
+              className="px-4 py-2 border rounded disabled:opacity-40 transition-colors hover:bg-gray-50"
             >
               Next
             </button>

@@ -15,15 +15,15 @@ export default function FindbySymptom() {
   const cards = [
     {
       id: 1,
-      icon: "/info-orange-circle.svg",
-      title: "Neck Pain",
+      icon: "/icon/head-ache.svg",
+      title: "Head Ache",
       subtitle: "explore treatment",
       modal: {
-        title: "Neck Pain Treatment Plan",
-        subtitle: "Targeted therapy for cervical strain & posture issues",
+        title: "Head Ache Treatment Plan",
+        subtitle: "Targeted physiotherapy for headaches and migraines",
         steps: [
           "Cervical mobility and stretching exercises",
-          "Manual therapy for muscle tightness",
+          "Manual therapy for neck muscle tightness",
           "Postural correction training",
           "Isometric neck strengthening",
           "Ergonomic workstation guidance",
@@ -32,99 +32,128 @@ export default function FindbySymptom() {
           "This plan serves as a general guideline. For accurate diagnosis and personalized care, consult our certified physiotherapist.",
       },
     },
+
     {
       id: 2,
-      icon: "/Lightning.svg",
-      title: "Lower Back Pain",
-      subtitle: "explore treatment",
-      modal: {
-        title: "Lower Back Pain Treatment Plan",
-        subtitle: "Focused rehabilitation for lumbar discomfort",
-        steps: [
-          "Core stabilization exercises",
-          "Lumbar spine mobilization",
-          "Hamstring & hip flexor stretching",
-          "Posture re-education",
-          "Heat therapy for muscle relaxation",
-        ],
-        nextStep:
-          "Back pain varies in cause and severity. A detailed assessment ensures safe and effective recovery.",
-      },
-    },
-    {
-      id: 3,
-      icon: "/heartBeat.svg",
+      icon: "/icon/shoulder-pain.svg",
       title: "Shoulder Pain",
       subtitle: "explore treatment",
       modal: {
-        title: "Shoulder Rehabilitation Plan",
-        subtitle: "Recovery plan for rotator cuff & impingement issues",
+        title: "Shoulder Pain Treatment Plan",
+        subtitle: "Targeted physiotherapy for shoulder pain and stiffness",
         steps: [
-          "Rotator cuff strengthening",
-          "Scapular stabilization exercises",
-          "Range-of-motion therapy",
-          "Manual release techniques",
-          "Resistance band strengthening",
+          "Clinical assessment of shoulder movement and posture",
+          "Manual therapy and joint mobilization",
+          "Rotator cuff strengthening exercises",
+          "Scapular stability and posture correction exercises",
+          "Activity modification and ergonomic advice",
+          "Progressive functional and strengthening program",
         ],
         nextStep:
-          "Shoulder conditions require tailored exercise progression. Book a session for guided therapy.",
+          "Shoulder pain can result from multiple causes. A professional assessment ensures proper recovery and prevents recurrence.",
       },
     },
+
+    {
+      id: 3,
+      icon: "/icon/neck-pain.svg",
+      title: "Neck Pain",
+      subtitle: "explore treatment",
+      modal: {
+        title: "Neck Pain Treatment Plan",
+        subtitle: "Targeted physiotherapy for cervical strain and posture issues",
+        steps: [
+          "Detailed posture,  movement assessment and diagnosis",
+          "Cervical spine mobilization and manual therapy",
+          "Pain management using modalities (IFT, TENS, ultrasound if needed)",
+          "Strengthening of deep neck flexors and upper back muscles",
+          "Scapular stabilization exercises",
+          "Activity modification and home exercise program",
+        ],
+        nextStep:
+          "Neck pain often relates to posture and muscle imbalance. Guided physiotherapy improves long-term relief.",
+      },
+    },
+
     {
       id: 4,
-      icon: "/Lightning.svg",
+      icon: "/icon/knee-pain.svg",
       title: "Knee Pain",
       subtitle: "explore treatment",
       modal: {
         title: "Knee Pain Treatment Plan",
-        subtitle: "Strength-based recovery for knee joint stability",
+        subtitle: "Strength-based physiotherapy for knee joint stability",
         steps: [
-          "Quadriceps and hamstring strengthening",
-          "Patellar mobilization",
-          "Balance and proprioception training",
-          "Low-impact functional exercises",
-          "Activity modification guidance",
+          "Clinical assessment of knee alignment, movement, and strengths",
+          "Soft tissue release for quadriceps, hamstrings, and calf muscles",
+          "Manual therapy and joint mobilization",
+          "Pain and inflammation control (IFT, TENS, ultrasound if required)",
+          "Strengthening of quadriceps, hamstrings, and hip muscles",
+          "Functional training for stairs, sitting, and walking",
         ],
         nextStep:
-          "Knee pain recovery depends on alignment and strength balance. Professional supervision is recommended.",
+          "Knee recovery depends on muscle strength and joint alignment. Professional supervision is recommended for best results.",
       },
     },
+
     {
       id: 5,
-      icon: "/heartBeat.svg",
-      title: "Ankle Sprain",
+      icon: "/icon/elbow-pain.svg",
+      title: "Elbow Pain",
       subtitle: "explore treatment",
       modal: {
-        title: "Ankle Sprain Rehabilitation Plan",
-        subtitle: "Structured healing for ligament recovery",
+        title: "Elbow Pain Treatment Plan",
+        subtitle: "Targeted physiotherapy for elbow injuries and strain",
         steps: [
-          "Controlled ankle mobility exercises",
-          "Proprioception & balance drills",
-          "Resistance band strengthening",
-          "Swelling control techniques",
-          "Gradual return-to-sport progression",
+          "Clinical assessment of elbow movement, grip strength, and pain pattern",
+          "Soft tissue release for forearm flexor and extensor muscles",
+          "Pain and inflammation management (IFT, TENS, ultrasound if required)",
+          "Progressive strengthening of wrist and elbow muscles",
+          "Grip strengthening and functional training",
+          "Home exercise program for long-term recovery"
         ],
         nextStep:
-          "Improper rehab can lead to recurring sprains. Get a personalized plan for complete recovery.",
+          "Elbow pain such as tennis elbow requires gradual strengthening and proper technique correction.",
       },
     },
-    {
+     {
       id: 6,
-      icon: "/Lightning.svg",
-      title: "Sciatica",
+      icon: "/icon/heel-pain.svg",
+      title: "Heel Pain",
       subtitle: "explore treatment",
       modal: {
-        title: "Sciatica Pain Management Plan",
-        subtitle: "Relief plan for nerve compression symptoms",
+        title: "Heel Pain Treatment Plan",
+        subtitle: "Targeted physiotherapy for heel injuries and strain",
         steps: [
-          "Nerve gliding exercises",
-          "Piriformis stretching",
-          "Core strengthening",
-          "Postural correction training",
-          "Spinal decompression techniques",
+          "Detailed assessment of foot posture, gait, and pain pattern",
+          "Soft tissue release for plantar fascia and calf muscles",
+          "Pain and inflammation management (IFT, TENS, ultrasound if required)",
+          "Strengthening of foot intrinsic and ankle muscles",
+          "Footwear advice and orthotic recommendations if needed",
+          "Progressive functional and weight-bearing exercises",
         ],
         nextStep:
-          "Sciatica symptoms differ based on nerve involvement. Consult our specialist for safe treatment progression.",
+          "Heel pain such as plantar fasciitis requires gradual strengthening and proper technique correction.",
+      },
+    },
+     {
+      id: 7,
+      icon: "/icon/wrist-pain.svg",
+      title: "Wrist Pain",
+      subtitle: "explore treatment",
+      modal: {
+        title: "Wrist Pain Treatment Plan",
+        subtitle: "Targeted physiotherapy for wrist injuries and strain",
+        steps: [
+          "Clinical assessment of wrist movement, strength, and pain pattern",
+          "Soft tissue release for forearm and wrist muscles",
+          "Pain and inflammation management (IFT, TENS, ultrasound if required)",
+          "Stretching exercises to improve flexibility",
+          "Tendon gliding and mobility exercises",
+          "Functional training for daily and work-related tasks",
+        ],
+        nextStep:
+          "Wrist pain such as carpal tunnel syndrome requires gradual strengthening and proper technique correction.",
       },
     },
   ];
@@ -157,7 +186,11 @@ export default function FindbySymptom() {
         <div className="md:hidden px-4 mt-8 pb-20">
           <div className="grid grid-cols-2 gap-4">
             {cards.map((card) => (
-              <div key={card.id} onClick={() => setActiveModal(card.modal)}>
+              <div
+                key={card.id}
+                onClick={() => setActiveModal(card.modal)}
+                className="w-full aspect-[282/209]"
+              >
                 <SymptomCard {...card} />
               </div>
             ))}
@@ -175,8 +208,11 @@ export default function FindbySymptom() {
             className="!px-8 lg:!px-[7.5rem] py-10 !pr-32"
           >
             {cards.map((card) => (
-              <SwiperSlide key={card.id} className="!w-[280px] lg:!w-[320px]">
-                <div onClick={() => setActiveModal(card.modal)}>
+              <SwiperSlide
+                key={card.id}
+                className="!w-[282px] !h-[209px]"
+              >
+                <div onClick={() => setActiveModal(card.modal)} className="w-full h-full">
                   <SymptomCard {...card} />
                 </div>
               </SwiperSlide>

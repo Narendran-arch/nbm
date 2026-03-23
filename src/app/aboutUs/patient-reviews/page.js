@@ -14,7 +14,7 @@ export default function PatientReviewsPage() {
       id: 1,
       name: "Meenakshi R",
       location: "Chennai",
-      image: "/patient.png",
+      image: "/aboutUs/patient.png",
       review:
         "The team helped me recover faster than expected. The physiotherapists were extremely supportive and professional.",
     },
@@ -22,7 +22,7 @@ export default function PatientReviewsPage() {
       id: 2,
       name: "Raj Verma",
       location: "Vellore",
-      image: "/patient.png",
+      image: "/aboutUs/patient.png",
       review:
         "Finally found relief from chronic back pain. The treatment plan was structured and effective.",
     },
@@ -30,7 +30,7 @@ export default function PatientReviewsPage() {
       id: 3,
       name: "Annie D",
       location: "Bangalore",
-      image: "/patient.png",
+      image: "/aboutUs/patient.png",
       review:
         "Excellent patient care and post-surgery rehabilitation. I feel stronger and more confident.",
     },
@@ -38,7 +38,7 @@ export default function PatientReviewsPage() {
       id: 4,
       name: "Suresh K",
       location: "Coimbatore",
-      image: "/patient.png",
+      image: "/aboutUs/patient.png",
       review:
         "Professional staff and modern therapy methods. My knee pain has reduced significantly.",
     },
@@ -107,10 +107,10 @@ export default function PatientReviewsPage() {
     <section
       className="relative w-full min-h-screen flex flex-col justify-center"
       style={{
-        backgroundImage: "url('/review-backgorund.svg')",
+        backgroundImage: "url('/aboutUs/review-background.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-      }}
+      }} 
     >
       {/* Overlay */}
 
@@ -118,7 +118,7 @@ export default function PatientReviewsPage() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className=" font-bold text-[#014579]">
-            What Our Patients Say
+            What Our Patients Say 
           </h1>
         </div>
 

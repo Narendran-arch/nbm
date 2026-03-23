@@ -6,7 +6,7 @@ const steps = [
   {
     id: 1,
     title: "1. Appointment",
-    icon: "/appointment.svg",
+    icon: "/icon/appointment.svg",
     description:
       "Try our quick symptom checker to help us understand what you're experiencing or call us directly.",
     position: "left",
@@ -14,7 +14,7 @@ const steps = [
   {
     id: 2,
     title: "2. Diagnosis",
-    icon: "/diagnosis.svg",
+    icon: "/icon/diagnosis.svg",
     description:
       "Understand your condition clearly and get professional guidance before treatment.",
     position: "top",
@@ -22,7 +22,7 @@ const steps = [
   {
     id: 3,
     title: "3. Treatment",
-    icon: "/treatment.svg",
+    icon: "/icon/treatment.svg",
     description:
       "Personalized treatment plans designed for faster and safer recovery.",
     position: "right",
@@ -61,7 +61,7 @@ export default function Threesteps() {
 
         {/* Left Arrow */}
         <Image
-          src="/right-yellow-arrow.svg"
+          src="/threeSteps/right-yellow-arrow.svg"
           className="absolute left-[22%] top-[35%]"
           width="130"
           height="90"
@@ -70,7 +70,7 @@ export default function Threesteps() {
 
         {/* Right Arrow */}
         <Image
-          src="/left-yellow-arrow.svg"
+          src="/threeSteps/left-yellow-arrow.svg"
           className="absolute right-[20%] top-[24%]"
           width="130"
           height="90"
@@ -88,9 +88,12 @@ export default function Threesteps() {
 
       {/* CTA */}
       <div className="mt-[80px] flex justify-center">
-        <Link href={"/ourservice/Symptom-checker"}  className="px-6 py-3 border border-green-600 text-green-600 rounded-lg font-semibold hover:bg-green-50 transition">
+        <Link href={"/ourservice/Symptom-checker"}  className="px-[30%] md:px-24 py-3 border border-green-600 text-white rounded-lg font-semibold bg-green-600 hover:bg-green-700 transition-colors duration-300">
           Begin your assessment
         </Link>
+      </div>
+      <div className="mt-4 text-center text-[#757575] text-[1rem]" >
+        Try our  Quick symptom checker for self initial assessment
       </div>
     </section>
   );
