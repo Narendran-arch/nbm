@@ -28,7 +28,7 @@ export const therapies = [
         goal: "Regain full functionality",
         category: "Pain Relief",
         tags: ["tissue healing", "inflammation", "rehab"],
-        image: "/ourTherapies/Ultra -Sound-Therapy.png",
+        image: "/ourTherapies/Ultra-Sound-Therapy.png",
         description:
             "Ultrasound therapy uses sound waves to promote tissue healing, reduce inflammation, and improve blood circulation. It supports faster recovery and pain reduction.",
     },
