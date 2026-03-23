@@ -6,7 +6,7 @@ export const therapies = [
         goal: "Regain full functionality",
         category: "Pain Relief",
         tags: ["joint pain", "stiffness", "mobility"],
-        image: "/ourTherapies/manual-therapy.png",
+        image: "/ourTherapies/Manual-Therapy.png",
         description:
             "Manual therapy involves hands-on techniques to relieve pain, improve joint mobility, and restore muscle function. It helps reduce stiffness and enhances movement efficiency.",
     },
@@ -17,7 +17,7 @@ export const therapies = [
         goal: "Return to peak performance",
         category: "Pain Relief",
         tags: ["pain relief", "nerve stimulation", "recovery"],
-        image: "/ourTherapies/interferential-Therapy.png",
+        image: "/ourTherapies/Interferential-Therapy.png",
         description:
             "IFT uses low-frequency electrical currents to relieve pain, reduce inflammation, and stimulate healing. It is effective for deep tissue recovery and chronic pain conditions.",
     },
@@ -28,7 +28,7 @@ export const therapies = [
         goal: "Regain full functionality",
         category: "Pain Relief",
         tags: ["tissue healing", "inflammation", "rehab"],
-        image: "/ourTherapies/ultra-sound-therapy.png",
+        image: "/ourTherapies/Ultra -Sound-Therapy.png",
         description:
             "Ultrasound therapy uses sound waves to promote tissue healing, reduce inflammation, and improve blood circulation. It supports faster recovery and pain reduction.",
     },
@@ -39,7 +39,7 @@ export const therapies = [
         goal: " Enhance quality of life",
         category: "Rehabilitation",
         tags: ["muscle stimulation", "recovery", "strength"],
-        image: "/ourTherapies/myofascial-release.png",
+        image: "/ourTherapies/Myofascial-Release.png",
         description:
             "Restore strength and function to your muscles and joints.​ Our targeted exercises relieve pain and improve mobility.​ The goal is to help you return to daily activities with better mobility..,",
     },

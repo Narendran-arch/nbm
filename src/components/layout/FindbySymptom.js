@@ -138,7 +138,7 @@ export default function FindbySymptom() {
     },
      {
       id: 7,
-      icon: "/icon/wrist-pain.svg",
+      icon: "/icon/Wrist-pain.svg",
       title: "Wrist Pain",
       subtitle: "explore treatment",
       modal: {
